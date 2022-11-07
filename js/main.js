@@ -1,5 +1,9 @@
 'use strict';
 
+/*--------------------
+    MAIN
+--------------------*/
+
 // Dichiaro variabile relativa all'oggetto Team
 const teamMembers = [
     {
@@ -48,8 +52,11 @@ for ( let i = 0; i < teamMembers.length; i++ ){
     console.log(teamMembers[i].fullName, teamMembers[i].occupation, teamMembers[i].image);
     const listItem = document.createElement('li');
     listItem.innerHTML = `
-    <h3>${teamMembers[i].fullName}</h3>
-    <h5>${teamMembers[i].occupation}</h5>
-    <img src="img/${teamMembers[i].image}" alt="${teamMembers[i].image}"></img>`;
+    <img src="img/${teamMembers[i].image}" alt="photo-member" style="display:block; width:100%"></img>
+    <div class="description" style="padding:10px 0;">
+        <h3>${teamMembers[i].fullName}</h3>
+        <h5>${teamMembers[i].occupation}</h5>
+    </div>
+    `;
     members.append(listItem);
 }
