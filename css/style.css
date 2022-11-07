@@ -32,6 +32,7 @@ li {
     border: 1px solid lightgray;
     border-radius: .625rem;
     cursor: pointer;
+    box-shadow: 5px 5px 9px 1px #A1A1A1;
 }
 img {
     transition: transform 0.3s ease-in;
