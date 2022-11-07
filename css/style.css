@@ -30,6 +30,7 @@ li {
     margin: 1.875rem .625rem;  
     background-color: rgba(217, 220, 226, 0.4);
     border: 1px solid lightgray;
+    border-radius: .625rem;
     cursor: pointer;
 }
 img {
