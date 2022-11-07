@@ -55,4 +55,7 @@ li:hover img {
         width: 100%;
         margin: 1.875rem .625rem;  
     }
+    h2 {
+        font-size: 1.875rem;
+    }
 }
