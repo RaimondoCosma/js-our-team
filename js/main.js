@@ -35,3 +35,8 @@ const teamMembers = [
 ]
 
 console.log(teamMembers);
+
+// Creo un ciclo per stampare in console.log le informazioni relative alle chiavi dei membri
+for ( let i = 0; i < teamMembers.length; i++ ){
+    console.log(teamMembers[i].fullName, teamMembers[i].occupation, teamMembers[i].image);
+}
