@@ -50,6 +50,6 @@ for ( let i = 0; i < teamMembers.length; i++ ){
     listItem.innerHTML = `
     <h3>${teamMembers[i].fullName}</h3>
     <h5>${teamMembers[i].occupation}</h5>
-    <img src="" alt="${teamMembers[i].image}"></img>`;
+    <img src="img/${teamMembers[i].image}" alt="${teamMembers[i].image}"></img>`;
     members.append(listItem);
 }
