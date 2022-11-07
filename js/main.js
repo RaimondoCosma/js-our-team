@@ -37,6 +37,19 @@ const teamMembers = [
 console.log(teamMembers);
 
 // Creo un ciclo per stampare in console.log le informazioni relative alle chiavi dei membri
+// for ( let i = 0; i < teamMembers.length; i++ ){
+// }
+
+// Dichiaro variabile relativa a #members del DOM
+const members = document.getElementById('members');
+
+// Creo ciclo per aggiungere <li> e inserirli nel DOM
 for ( let i = 0; i < teamMembers.length; i++ ){
     console.log(teamMembers[i].fullName, teamMembers[i].occupation, teamMembers[i].image);
+    const listItem = document.createElement('li');
+    listItem.innerHTML = `
+    <h3>${teamMembers[i].fullName}</h3>
+    <h5>${teamMembers[i].occupation}</h5>
+    <img src="" alt="${teamMembers[i].image}"></img>`;
+    members.append(listItem);
 }
