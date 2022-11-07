@@ -30,6 +30,13 @@ li {
     margin: 1.875rem .625rem;  
     background-color: rgba(217, 220, 226, 0.4);
     border: 1px solid lightgray;
+    cursor: pointer;
+}
+img {
+    transition: transform 0.3s ease-in;
+}
+li:hover img {
+    transform: scale(1.1);
 }
 
 /*-------------------

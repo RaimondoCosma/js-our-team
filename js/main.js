@@ -52,7 +52,9 @@ for ( let i = 0; i < teamMembers.length; i++ ){
     console.log(teamMembers[i].fullName, teamMembers[i].occupation, teamMembers[i].image);
     const listItem = document.createElement('li');
     listItem.innerHTML = `
-    <img src="img/${teamMembers[i].image}" alt="photo-member" style="display:block; width:100%"></img>
+    <div style="overflow:hidden">
+        <img src="img/${teamMembers[i].image}" alt="photo-member" style="display:block; width:100%"></img>
+    </div>
     <div class="description" style="padding:10px 0;">
         <h3>${teamMembers[i].fullName}</h3>
         <h5>${teamMembers[i].occupation}</h5>
