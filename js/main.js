@@ -54,7 +54,7 @@ const members = document.getElementById('members');
 
 // Creo ciclo per aggiungere <li> e inserirli nel DOM
 for ( let i = 0; i < teamMembers.length; i++ ){
-    console.log(teamMembers[i].fullName, teamMembers[i].occupation, teamMembers[i].image);
+    console.log(teamMembers[i].fullName, "-->", teamMembers[i].occupation,"-->", teamMembers[i].image);
     const listItem = document.createElement('li');
     listItem.innerHTML = `
     <div style="overflow:hidden; border-radius: 10px 10px 0 0">
