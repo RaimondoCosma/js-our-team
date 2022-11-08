@@ -36,9 +36,14 @@ const teamMembers = [
         occupation: 'Graphic Designer',
         image: 'barbara-ramos-graphic-designer.jpg',
     },
-]
+];
 
 console.log(teamMembers);
+for ( let i = 0; i < teamMembers.length; i++ ){
+    for ( let key in teamMembers[i] ){
+        console.log(key, teamMembers[i][key]);
+    }
+}
 
 // Creo un ciclo per stampare in console.log le informazioni relative alle chiavi dei membri
 // for ( let i = 0; i < teamMembers.length; i++ ){
